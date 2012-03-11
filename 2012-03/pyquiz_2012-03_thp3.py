@@ -9,8 +9,7 @@ def c(x, n):
     if n: x = int(x)
     for y, z in reversed(sorted(a)):
         while (n and x >= y) or (not n and x.startswith(z)):
-            yield (n and z or y)
-            x = ((x-y) if n else x[len(z):])
+            yield (n and z or y); x = ((x-y) if n else x[len(z):])
 
 for x in filter(None, map(str.strip, sys.stdin)):
     print reduce(lambda d, e: d+e, c(x, x.isdigit()))
