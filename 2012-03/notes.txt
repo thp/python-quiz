@@ -11,6 +11,12 @@ Gleiche Anzahl von Bytes:
  else:
   if x[:i]==h:x,e=x[i:],e+g
 
+ ABER:
+
+ if d:
+  if x>=g:x,e=x-g,e+h
+ elif x[:i]==h:x,e=x[i:],e+g
+
 
     __import__('fileinput')
     import fileinput as f;f
