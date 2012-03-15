@@ -1,0 +1,3 @@
+
+x.startswith(y)  ===  x[:len(y)]==y    (aber kürzer)
+
