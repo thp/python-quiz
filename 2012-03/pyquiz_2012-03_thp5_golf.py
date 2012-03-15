@@ -1,11 +1,11 @@
 import re
 def c(w,v):
- x,e,d=w;g,h=v;g=int(g);i=len(h)
- if d:
-  if x>=g:x,e=x-g,e+h
+ t,h,p=w;g,j=v;g=int(g);i=len(j)
+ if p:
+  if t>=g:t,h=t-g,h+j
  else:
-  if x[:i]==h:x,e=x[i:],e+g
- return x,e,d
+  if t[:i]==j:t,h=t[i:],h+g
+ return t,h,p
 for x in __import__('fileinput').input():
  try:x=int(x),'',1
  except:x=x,0,0
