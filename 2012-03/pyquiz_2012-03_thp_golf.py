@@ -1,4 +1,4 @@
-import fileinput as f;r=range;a=[((1+4*(i%2))*10**(i/2),'IVXLCDM'[i]) for i in r(7)];a+=[(a[x+1][0]-a[x/2*2][0],a[x/2*2][1]+a[x+1][1]) for x in r(6)]
+import fileinput as f;r=range;a=[((1+4*(i%2))*10**(i/2),'IVXLCDM'[i])for i in r(7)];a+=[(a[x+1][0]-a[x/2*2][0],a[x/2*2][1]+a[x+1][1])for x in r(6)]
 def c(n):
  x=n and int(i)or i
  for y,z in reversed(sorted(a)):
