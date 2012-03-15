@@ -1,3 +1,20 @@
 
 x.startswith(y)  ===  x[:len(y)]==y    (aber kürzer)
 
+Gleiche Anzahl von Bytes:
+
+ if d and x>=g:x,e=x-g,e+h
+ if not d and x[:i]==h:x,e=x[i:],e+g
+
+ if d:
+  if x>=g:x,e=x-g,e+h
+ else:
+  if x[:i]==h:x,e=x[i:],e+g
+
+
+    __import__('fileinput')
+    import fileinput as f;f
+
+    __import__('sys')
+    import sys as s;s
+
