@@ -2,7 +2,7 @@
 # http://www.pyug.at/PythonQuiz/2012-03
 # <m@thp.io>'s solution, variant 2
 
-import sys
+import fileinput
 import functools
 import operator
 
@@ -17,6 +17,6 @@ def convert(x):
             yield (rv if n else av)
             x = ((x - av) if n else x[len(rv):])
 
-for line in filter(None, map(lambda x: x.strip(), sys.stdin)):
+for line in filter(None, map(lambda x: x.strip(), fileinput.input())):
     print(functools.reduce(operator.add, convert(line)))
 

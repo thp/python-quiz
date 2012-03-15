@@ -2,7 +2,7 @@
 # http://www.pyug.at/PythonQuiz/2012-03
 # <m@thp.io>'s solution
 
-import sys
+import fileinput
 
 alpha = [
     (1, 'I'),
@@ -33,7 +33,7 @@ def to_arabic(roman):
             yield avalue
             roman = roman[len(rvalue):]
 
-for line in sys.stdin:
+for line in fileinput.input():
     try:
         print(''.join(to_roman(int(line))))
     except ValueError:
