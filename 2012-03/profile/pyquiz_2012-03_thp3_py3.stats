@@ -1,27 +1,27 @@
-Wed Mar 21 11:46:32 2012    pyquiz_2012-03_thp3_py3.prof
+Wed Mar 21 15:45:52 2012    pyquiz_2012-03_thp3_py3.prof
 
-         24959857 function calls (24959210 primitive calls) in 25.034 seconds
+         24959857 function calls (24959210 primitive calls) in 26.673 seconds
 
    Ordered by: internal time, cumulative time
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-  6319800    9.925    0.000   15.774    0.000 ../pyquiz_2012-03_thp3_py3.py:8(c)
-   799800    3.647    0.000   20.860    0.000 {_functools.reduce}
-   799800    2.915    0.000    2.915    0.000 {sorted}
-  7958700    2.559    0.000    2.559    0.000 {method 'startswith' of 'str' objects}
-        1    2.552    2.552   25.034   25.034 ../pyquiz_2012-03_thp3_py3.py:3(<module>)
-  4720200    1.440    0.000    1.440    0.000 ../pyquiz_2012-03_thp3_py3.py:15(<lambda>)
-   799801    0.709    0.000    0.826    0.000 /usr/lib/python2.7/fileinput.py:243(next)
-        1    0.538    0.538    1.364    1.364 {map}
-  2760000    0.375    0.000    0.375    0.000 {len}
-   799800    0.231    0.000    0.231    0.000 {method 'isdigit' of 'str' objects}
-      647    0.098    0.000    0.098    0.000 {method 'readlines' of 'file' objects}
+  6319800   10.446    0.000   17.450    0.000 ../pyquiz_2012-03_thp3_py3.py:8(c)
+  7958700    3.736    0.000    3.736    0.000 {method 'startswith' of 'str' objects}
+   799800    3.672    0.000   22.574    0.000 {_functools.reduce}
+   799800    2.881    0.000    2.881    0.000 {sorted}
+        1    2.441    2.441   26.673   26.673 ../pyquiz_2012-03_thp3_py3.py:3(<module>)
+  4720200    1.453    0.000    1.453    0.000 ../pyquiz_2012-03_thp3_py3.py:15(<lambda>)
+   799801    0.730    0.000    0.845    0.000 /usr/lib/python2.7/fileinput.py:243(next)
+        1    0.553    0.553    1.398    1.398 {map}
+  2760000    0.387    0.000    0.387    0.000 {len}
+   799800    0.234    0.000    0.234    0.000 {method 'isdigit' of 'str' objects}
+      647    0.097    0.000    0.097    0.000 {method 'readlines' of 'file' objects}
         1    0.026    0.026    0.026    0.026 {filter}
- 1294/647    0.019    0.000    0.117    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
+ 1294/647    0.018    0.000    0.115    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
         1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
         1    0.000    0.000    0.000    0.000 {open}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)

@@ -1,64 +1,64 @@
-Wed Mar 21 11:53:47 2012    pyquiz_2012-03_thp_golf_precomputed.prof
+Wed Mar 21 15:53:22 2012    pyquiz_2012-03_thp_golf_precomputed.prof
 
-         24160293 function calls (24159631 primitive calls) in 18.777 seconds
+         24160293 function calls (24159631 primitive calls) in 18.940 seconds
 
    Ordered by: internal time, cumulative time
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-  6319800    9.039    0.000   10.254    0.000 ../pyquiz_2012-03_thp_golf_precomputed.py:2(c)
-   799800    3.544    0.000   15.100    0.000 {reduce}
-        1    2.050    2.050   18.777   18.777 ../pyquiz_2012-03_thp_golf_precomputed.py:1(<module>)
-  4720200    1.302    0.000    1.302    0.000 ../pyquiz_2012-03_thp_golf_precomputed.py:6(<lambda>)
-10718746/10718743    1.215    0.000    1.215    0.000 {len}
-   799801    0.713    0.000    0.829    0.000 /usr/lib/python2.7/fileinput.py:243(next)
-        1    0.557    0.557    1.386    1.386 {map}
-   799800    0.215    0.000    0.215    0.000 {method 'isdigit' of 'str' objects}
-      647    0.097    0.000    0.097    0.000 {method 'readlines' of 'file' objects}
-        1    0.026    0.026    0.026    0.026 {filter}
- 1294/647    0.018    0.000    0.116    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
+  6319800    9.087    0.000   10.377    0.000 ../pyquiz_2012-03_thp_golf_precomputed.py:2(c)
+   799800    3.468    0.000   15.197    0.000 {reduce}
+        1    2.100    2.100   18.940   18.940 ../pyquiz_2012-03_thp_golf_precomputed.py:1(<module>)
+  4720200    1.352    0.000    1.352    0.000 ../pyquiz_2012-03_thp_golf_precomputed.py:6(<lambda>)
+10718746/10718743    1.290    0.000    1.290    0.000 {len}
+   799801    0.725    0.000    0.849    0.000 /usr/lib/python2.7/fileinput.py:243(next)
+        1    0.570    0.570    1.419    1.419 {map}
+   799800    0.195    0.000    0.195    0.000 {method 'isdigit' of 'str' objects}
+      647    0.104    0.000    0.104    0.000 {method 'readlines' of 'file' objects}
+        1    0.028    0.028    0.028    0.028 {filter}
+ 1294/647    0.020    0.000    0.124    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
         1    0.000    0.000    0.000    0.000 {__import__}
       3/1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:379(_parse)
       5/1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:32(_compile)
       7/3    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:140(getwidth)
-       18    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:130(__getitem__)
         1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
        11    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:182(__next)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/re.py:226(_compile)
-        1    0.000    0.000    0.000    0.000 {method 'findall' of '_sre.SRE_Pattern' objects}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:361(_compile_info)
+       18    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:130(__getitem__)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'findall' of '_sre.SRE_Pattern' objects}
       3/1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:301(_parse_sub)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:495(compile)
        22    0.000    0.000    0.000    0.000 {isinstance}
-        8    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:201(get)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:178(_compile_charset)
-        1    0.000    0.000    0.000    0.000 {open}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:495(compile)
         2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:207(_optimize_charset)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:663(parse)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:178(_compile_charset)
+        1    0.000    0.000    0.000    0.000 {open}
+       43    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        8    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:201(get)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
-       10    0.000    0.000    0.000    0.000 {min}
        11    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:195(match)
         2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:354(_simple)
+       10    0.000    0.000    0.000    0.000 {min}
        10    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:126(__len__)
-       43    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/re.py:169(findall)
-        5    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:90(__init__)
-        4    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:138(append)
         2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:72(opengroup)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:480(_code)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/re.py:169(findall)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
+        5    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:90(__init__)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:83(closegroup)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:474(isstring)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:480(_code)
+        1    0.000    0.000    0.000    0.000 {_sre.compile}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
         2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:257(_escape)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:178(__init__)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:83(closegroup)
-        1    0.000    0.000    0.000    0.000 {_sre.compile}
-        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:134(__setitem__)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:474(isstring)
+        4    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:138(append)
         3    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
-        2    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:134(__setitem__)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:67(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
+        2    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
         1    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 

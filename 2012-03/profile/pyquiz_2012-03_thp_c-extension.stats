@@ -1,0 +1,12 @@
+Wed Mar 21 15:52:38 2012    pyquiz_2012-03_thp_c-extension.prof
+
+         3 function calls in 0.305 seconds
+
+   Ordered by: internal time, cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.305    0.305    0.305    0.305 {_roman.decode_all}
+        1    0.000    0.000    0.305    0.305 ../pyquiz_2012-03_thp_c-extension.py:2(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

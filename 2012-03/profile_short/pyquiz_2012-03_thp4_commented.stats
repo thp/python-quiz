@@ -1,4 +1,4 @@
-Wed Mar 21 12:02:10 2012    pyquiz_2012-03_thp4_commented.prof
+Wed Mar 21 16:23:41 2012    pyquiz_2012-03_thp4_commented.prof
 
          213 function calls (211 primitive calls) in 0.000 seconds
 
@@ -11,21 +11,21 @@ Wed Mar 21 12:02:10 2012    pyquiz_2012-03_thp4_commented.prof
         6    0.000    0.000    0.000    0.000 ../pyquiz_2012-03_thp4_commented.py:15(first)
       4/2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
         7    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:243(next)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
        42    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
         1    0.000    0.000    0.000    0.000 {open}
         2    0.000    0.000    0.000    0.000 {method 'readlines' of 'file' objects}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
-        1    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
         1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
+        1    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
         2    0.000    0.000    0.000    0.000 {range}
+        2    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
         1    0.000    0.000    0.000    0.000 {isinstance}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
-        2    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
         4    0.000    0.000    0.000    0.000 {len}
 
 

@@ -1,0 +1,28 @@
+Wed Mar 21 15:52:37 2012    pyquiz_2012-03_thp9_zzyield.prof
+
+         1645151 function calls (1644504 primitive calls) in 2.855 seconds
+
+   Ordered by: internal time, cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    1.679    1.679    2.855    2.855 ../pyquiz_2012-03_thp9_zzyield.py:4(<module>)
+   799801    0.815    0.000    0.907    0.000 /usr/lib/python2.7/fileinput.py:243(next)
+   799800    0.234    0.000    0.234    0.000 {method 'strip' of 'str' objects}
+      647    0.073    0.000    0.073    0.000 {method 'readlines' of 'file' objects}
+ 1294/647    0.019    0.000    0.092    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
+    31599    0.016    0.000    0.016    0.000 ../pyquiz_2012-03_thp9_zzyield.py:13(step)
+     3999    0.013    0.000    0.029    0.000 {method 'join' of 'str' objects}
+     7999    0.006    0.000    0.035    0.000 ../pyquiz_2012-03_thp9_zzyield.py:12(mk)
+        1    0.000    0.000    0.000    0.000 {range}
+        1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 {open}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
+        1    0.000    0.000    0.000    0.000 {isinstance}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

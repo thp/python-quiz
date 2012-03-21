@@ -1,31 +1,31 @@
-Wed Mar 21 11:48:14 2012    pyquiz_2012-03_thp4_commented.prof
+Wed Mar 21 15:47:34 2012    pyquiz_2012-03_thp4_commented.prof
 
-         29734956 function calls (29734309 primitive calls) in 31.100 seconds
+         29734956 function calls (29734309 primitive calls) in 30.376 seconds
 
    Ordered by: internal time, cumulative time
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
- 16795800   13.313    0.000   16.434    0.000 ../pyquiz_2012-03_thp4_commented.py:21(step)
-   799800    6.128    0.000   22.562    0.000 {reduce}
-        1    4.061    4.061   31.100   31.100 ../pyquiz_2012-03_thp4_commented.py:1(<module>)
-   799800    3.210    0.000    3.210    0.000 ../pyquiz_2012-03_thp4_commented.py:15(first)
-  8397900    2.869    0.000    2.869    0.000 {method 'startswith' of 'str' objects}
-   799801    1.044    0.000    1.144    0.000 /usr/lib/python2.7/fileinput.py:243(next)
-  1740000    0.252    0.000    0.252    0.000 {len}
-   399900    0.123    0.000    0.123    0.000 {method 'strip' of 'str' objects}
-      647    0.079    0.000    0.079    0.000 {method 'readlines' of 'file' objects}
- 1294/647    0.021    0.000    0.100    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
+ 16795800   12.713    0.000   15.671    0.000 ../pyquiz_2012-03_thp4_commented.py:21(step)
+   799800    6.116    0.000   21.786    0.000 {reduce}
+        1    4.068    4.068   30.376   30.376 ../pyquiz_2012-03_thp4_commented.py:1(<module>)
+   799800    3.289    0.000    3.289    0.000 ../pyquiz_2012-03_thp4_commented.py:15(first)
+  8397900    2.718    0.000    2.718    0.000 {method 'startswith' of 'str' objects}
+   799801    1.019    0.000    1.114    0.000 /usr/lib/python2.7/fileinput.py:243(next)
+  1740000    0.239    0.000    0.239    0.000 {len}
+   399900    0.118    0.000    0.118    0.000 {method 'strip' of 'str' objects}
+      647    0.075    0.000    0.075    0.000 {method 'readlines' of 'file' objects}
+ 1294/647    0.020    0.000    0.095    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
         1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
         1    0.000    0.000    0.000    0.000 {open}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
         1    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
         2    0.000    0.000    0.000    0.000 {range}
         1    0.000    0.000    0.000    0.000 {isinstance}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
 
 

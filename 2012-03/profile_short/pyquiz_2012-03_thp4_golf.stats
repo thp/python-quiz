@@ -1,4 +1,4 @@
-Wed Mar 21 12:02:10 2012    pyquiz_2012-03_thp4_golf.prof
+Wed Mar 21 16:23:41 2012    pyquiz_2012-03_thp4_golf.prof
 
          286 function calls (284 primitive calls) in 0.001 seconds
 
@@ -10,14 +10,14 @@ Wed Mar 21 12:02:10 2012    pyquiz_2012-03_thp4_golf.prof
       126    0.000    0.000    0.000    0.000 ../pyquiz_2012-03_thp4_golf.py:2(c)
         6    0.000    0.000    0.000    0.000 {reduce}
       4/2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
-        1    0.000    0.000    0.000    0.000 {open}
         7    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:243(next)
-      126    0.000    0.000    0.000    0.000 {len}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
+      126    0.000    0.000    0.000    0.000 {len}
+        1    0.000    0.000    0.000    0.000 {open}
         2    0.000    0.000    0.000    0.000 {method 'readlines' of 'file' objects}
-        1    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
         1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)

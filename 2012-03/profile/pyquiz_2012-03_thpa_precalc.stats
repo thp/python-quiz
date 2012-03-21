@@ -1,0 +1,24 @@
+Wed Mar 21 15:53:25 2012    pyquiz_2012-03_thpa_precalc.prof
+
+         1601553 function calls (1600906 primitive calls) in 2.890 seconds
+
+   Ordered by: internal time, cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    1.739    1.739    2.890    2.890 ../pyquiz_2012-03_thpa_precalc.py:4(<module>)
+   799801    0.829    0.000    0.929    0.000 /usr/lib/python2.7/fileinput.py:243(next)
+   799800    0.222    0.000    0.222    0.000 {method 'strip' of 'str' objects}
+      647    0.078    0.000    0.078    0.000 {method 'readlines' of 'file' objects}
+ 1294/647    0.022    0.000    0.100    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
+        1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
+        1    0.000    0.000    0.000    0.000 {open}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
+        1    0.000    0.000    0.000    0.000 {isinstance}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

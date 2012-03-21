@@ -1,0 +1,25 @@
+Wed Mar 21 16:23:42 2012    pyquiz_2012-03_thp_c-extension_loop.prof
+
+         36 function calls (34 primitive calls) in 0.001 seconds
+
+   Ordered by: internal time, cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.001    0.001    0.001    0.001 ../pyquiz_2012-03_thp_c-extension_loop.py:2(<module>)
+      4/2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
+        7    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:243(next)
+        6    0.000    0.000    0.000    0.000 {_roman.decode}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        2    0.000    0.000    0.000    0.000 {method 'readlines' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
+        1    0.000    0.000    0.000    0.000 {open}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
+        6    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
+        1    0.000    0.000    0.000    0.000 {isinstance}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

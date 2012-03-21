@@ -1,33 +1,33 @@
-Wed Mar 21 11:46:57 2012    pyquiz_2012-03_thp3_py3_golf.prof
+Wed Mar 21 15:46:17 2012    pyquiz_2012-03_thp3_py3_golf.prof
 
-         24959857 function calls (24959210 primitive calls) in 25.289 seconds
+         24959857 function calls (24959210 primitive calls) in 25.184 seconds
 
    Ordered by: internal time, cumulative time
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-  6319800   10.184    0.000   16.097    0.000 ../pyquiz_2012-03_thp3_py3_golf.py:2(c)
-   799800    3.695    0.000   21.238    0.000 {_functools.reduce}
-   799800    2.922    0.000    2.922    0.000 {sorted}
-  7958700    2.572    0.000    2.572    0.000 {method 'startswith' of 'str' objects}
-        1    2.386    2.386   25.289   25.289 ../pyquiz_2012-03_thp3_py3_golf.py:1(<module>)
-  4720200    1.446    0.000    1.446    0.000 ../pyquiz_2012-03_thp3_py3_golf.py:6(<lambda>)
-   799801    0.729    0.000    0.845    0.000 /usr/lib/python2.7/fileinput.py:243(next)
-        1    0.540    0.540    1.384    1.384 {map}
-  2760000    0.418    0.000    0.418    0.000 {len}
-   799800    0.255    0.000    0.255    0.000 {method 'isdigit' of 'str' objects}
-      647    0.098    0.000    0.098    0.000 {method 'readlines' of 'file' objects}
-        1    0.026    0.026    0.026    0.026 {filter}
- 1294/647    0.018    0.000    0.116    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
+  6319800   10.128    0.000   16.001    0.000 ../pyquiz_2012-03_thp3_py3_golf.py:2(c)
+   799800    3.676    0.000   21.116    0.000 {_functools.reduce}
+   799800    2.870    0.000    2.870    0.000 {sorted}
+  7958700    2.611    0.000    2.611    0.000 {method 'startswith' of 'str' objects}
+        1    2.438    2.438   25.184   25.184 ../pyquiz_2012-03_thp3_py3_golf.py:1(<module>)
+  4720200    1.439    0.000    1.439    0.000 ../pyquiz_2012-03_thp3_py3_golf.py:6(<lambda>)
+   799801    0.712    0.000    0.827    0.000 /usr/lib/python2.7/fileinput.py:243(next)
+        1    0.544    0.544    1.372    1.372 {map}
+  2760000    0.392    0.000    0.392    0.000 {len}
+   799800    0.234    0.000    0.234    0.000 {method 'isdigit' of 'str' objects}
+      647    0.097    0.000    0.097    0.000 {method 'readlines' of 'file' objects}
+        1    0.025    0.025    0.025    0.025 {filter}
+ 1294/647    0.019    0.000    0.115    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
         1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
-        1    0.000    0.000    0.000    0.000 {open}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
+        1    0.000    0.000    0.000    0.000 {open}
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
         1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
-        1    0.000    0.000    0.000    0.000 {isinstance}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
         2    0.000    0.000    0.000    0.000 {range}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
+        1    0.000    0.000    0.000    0.000 {isinstance}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 
 

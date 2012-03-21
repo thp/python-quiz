@@ -1,0 +1,30 @@
+Wed Mar 21 16:23:42 2012    pyquiz_2012-03_thp9_yield.prof
+
+         39635 function calls (39633 primitive calls) in 0.028 seconds
+
+   Ordered by: internal time, cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    31599    0.009    0.000    0.009    0.000 ../pyquiz_2012-03_thp9_yield.py:15(step)
+     3999    0.009    0.000    0.018    0.000 {method 'join' of 'str' objects}
+        1    0.007    0.007    0.028    0.028 ../pyquiz_2012-03_thp9_yield.py:7(Converter)
+     3999    0.003    0.000    0.003    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.028    0.028 ../pyquiz_2012-03_thp9_yield.py:4(<module>)
+        1    0.000    0.000    0.000    0.000 {range}
+      4/2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
+        7    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:243(next)
+        1    0.000    0.000    0.000    0.000 {open}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
+        2    0.000    0.000    0.000    0.000 {method 'readlines' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
+        6    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
+        6    0.000    0.000    0.000    0.000 ../pyquiz_2012-03_thp9_yield.py:25(convert)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
+        1    0.000    0.000    0.000    0.000 {isinstance}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

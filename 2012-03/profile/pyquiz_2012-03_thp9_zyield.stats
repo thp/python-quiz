@@ -1,0 +1,30 @@
+Wed Mar 21 15:52:34 2012    pyquiz_2012-03_thp9_zyield.prof
+
+         2444952 function calls (2444305 primitive calls) in 3.473 seconds
+
+   Ordered by: internal time, cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    1.611    1.611    3.473    3.473 ../pyquiz_2012-03_thp9_zyield.py:4(<module>)
+   799801    0.862    0.000    0.957    0.000 /usr/lib/python2.7/fileinput.py:243(next)
+   799800    0.617    0.000    0.865    0.000 ../pyquiz_2012-03_thp9_zyield.py:29(convert)
+   799800    0.248    0.000    0.248    0.000 {method 'strip' of 'str' objects}
+      647    0.075    0.000    0.075    0.000 {method 'readlines' of 'file' objects}
+ 1294/647    0.019    0.000    0.095    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
+    31599    0.015    0.000    0.015    0.000 ../pyquiz_2012-03_thp9_zyield.py:16(step)
+     3999    0.014    0.000    0.030    0.000 {method 'join' of 'str' objects}
+     7999    0.006    0.000    0.036    0.000 ../pyquiz_2012-03_thp9_zyield.py:15(mk)
+        1    0.004    0.004    0.040    0.040 ../pyquiz_2012-03_thp9_zyield.py:8(Converter)
+        1    0.000    0.000    0.000    0.000 {range}
+        1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 {open}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
+        1    0.000    0.000    0.000    0.000 {isinstance}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

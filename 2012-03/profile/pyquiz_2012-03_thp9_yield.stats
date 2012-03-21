@@ -1,0 +1,30 @@
+Wed Mar 21 15:52:31 2012    pyquiz_2012-03_thp9_yield.prof
+
+         2440952 function calls (2440305 primitive calls) in 3.505 seconds
+
+   Ordered by: internal time, cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    1.634    1.634    3.505    3.505 ../pyquiz_2012-03_thp9_yield.py:4(<module>)
+   799801    0.876    0.000    0.968    0.000 /usr/lib/python2.7/fileinput.py:243(next)
+   799800    0.636    0.000    0.859    0.000 ../pyquiz_2012-03_thp9_yield.py:25(convert)
+   799800    0.223    0.000    0.223    0.000 {method 'strip' of 'str' objects}
+      647    0.073    0.000    0.073    0.000 {method 'readlines' of 'file' objects}
+ 1294/647    0.019    0.000    0.092    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
+    31599    0.016    0.000    0.016    0.000 ../pyquiz_2012-03_thp9_yield.py:15(step)
+     3999    0.014    0.000    0.030    0.000 {method 'join' of 'str' objects}
+        1    0.010    0.010    0.044    0.044 ../pyquiz_2012-03_thp9_yield.py:7(Converter)
+     3999    0.004    0.000    0.004    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {range}
+        1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 {open}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
+        1    0.000    0.000    0.000    0.000 {isinstance}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
+
+
