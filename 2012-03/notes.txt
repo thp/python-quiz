@@ -24,3 +24,5 @@ Gleiche Anzahl von Bytes:
     __import__('sys')
     import sys as s;s
 
+(for i in `seq 100` ; do seq 1 3999 | shuf ; done) > perftest.txt
+
