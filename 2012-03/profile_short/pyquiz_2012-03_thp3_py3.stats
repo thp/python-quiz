@@ -1,0 +1,33 @@
+Wed Mar 21 12:02:10 2012    pyquiz_2012-03_thp3_py3.prof
+
+         138 function calls (136 primitive calls) in 0.000 seconds
+
+   Ordered by: internal time, cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 ../pyquiz_2012-03_thp3_py3.py:3(<module>)
+       32    0.000    0.000    0.000    0.000 ../pyquiz_2012-03_thp3_py3.py:8(c)
+      4/2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
+        6    0.000    0.000    0.000    0.000 {_functools.reduce}
+        6    0.000    0.000    0.000    0.000 {sorted}
+        1    0.000    0.000    0.000    0.000 {map}
+        7    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:243(next)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
+        1    0.000    0.000    0.000    0.000 {open}
+        2    0.000    0.000    0.000    0.000 {method 'readlines' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
+        1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
+       20    0.000    0.000    0.000    0.000 ../pyquiz_2012-03_thp3_py3.py:15(<lambda>)
+       33    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
+        2    0.000    0.000    0.000    0.000 {range}
+        1    0.000    0.000    0.000    0.000 {isinstance}
+        1    0.000    0.000    0.000    0.000 {filter}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
+        7    0.000    0.000    0.000    0.000 {len}
+        6    0.000    0.000    0.000    0.000 {method 'isdigit' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
