@@ -1,0 +1,29 @@
+Wed Mar 21 11:48:45 2012    pyquiz_2012-03_thp4_golf.prof
+
+         35193157 function calls (35192510 primitive calls) in 30.206 seconds
+
+   Ordered by: internal time, cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+ 16795800   15.514    0.000   17.497    0.000 ../pyquiz_2012-03_thp4_golf.py:2(c)
+   799800    6.384    0.000   23.881    0.000 {reduce}
+        1    5.203    5.203   30.206   30.206 ../pyquiz_2012-03_thp4_golf.py:1(<module>)
+ 16795800    1.983    0.000    1.983    0.000 {len}
+   799801    1.023    0.000    1.121    0.000 /usr/lib/python2.7/fileinput.py:243(next)
+      647    0.077    0.000    0.077    0.000 {method 'readlines' of 'file' objects}
+ 1294/647    0.021    0.000    0.098    0.000 /usr/lib/python2.7/fileinput.py:292(readline)
+        1    0.000    0.000    0.000    0.000 {__import__}
+        1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:80(<module>)
+        1    0.000    0.000    0.000    0.000 {open}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:197(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:266(nextfile)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:91(input)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:184(FileInput)
+        1    0.000    0.000    0.000    0.000 {isinstance}
+        2    0.000    0.000    0.000    0.000 {range}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/fileinput.py:240(__iter__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
