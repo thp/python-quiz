@@ -1,6 +1,9 @@
 
 x.startswith(y)  ===  x[:len(y)]==y    (aber kürzer)
 
+reversed(x) -> x[::-1]  (wusste ich gar nicht! ;)0
+
+
 Gleiche Anzahl von Bytes:
 
  if d and x>=g:x,e=x-g,e+h
@@ -16,6 +19,11 @@ Gleiche Anzahl von Bytes:
  if d:
   if x>=g:x,e=x-g,e+h
  elif x[:i]==h:x,e=x[i:],e+g
+
+ import fileinput as f;f.input()
+ __import__('fileinput').input()
+ i=__import__;i('fileinput').input()
+ import fileinput as f,sys as s
 
 
     __import__('fileinput')
