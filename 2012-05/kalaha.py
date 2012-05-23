@@ -82,6 +82,10 @@ class Pit:
         """
         was_empty = (self.seeds == 0)
 
+        # Do not drop seeds into opponent's store
+        if self.is_store and self.player != dropping_player:
+            return self.next.drop(remaining, dropping_player)
+
         self.seeds, remaining = self.seeds + 1, remaining - 1
 
         if not remaining:
@@ -92,6 +96,11 @@ class Pit:
                     return True
 
                 if was_empty and not self.opposite.is_empty:
+                    # The field stays empty
+                    # (the seed we just put moves into the store)
+                    self.player.store.seeds += 1
+                    self.seeds = 0
+
                     # Steal the opposite seeds (if any)
                     self.player.store.steal_from(self.opposite)
 

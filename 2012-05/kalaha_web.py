@@ -147,7 +147,7 @@ if __name__ == '__main__':
     event_queue = EventQueue()
     game = Game(event_queue)
 
-    server = ThreadingHTTPServer(('localhost', 8080), RequestHandler)
+    server = ThreadingHTTPServer(('', 8080), RequestHandler)
     threading.Thread(target=server.serve_forever).start()
 
     game.run()
