@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalaha</title>
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+                background-color: #222;
+                color: #aaa;
+            }
+            .house, .store {
+                border-radius: 20px;
+                display: block;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                color: black;
+            }
+            .house span, .store span {
+                display: block;
+                text-align: center;
+                font-size: 20px;
+                margin-top: 40px;
+            }
+            .house {
+                background-color: #aaa;
+            }
+            .store {
+                background-color: #ccc;
+            }
+
+            .house.active {
+                background-color: #CCFF33;
+            }
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            var Game = {
+                id: null,
+
+                player_id: null,
+                input_id: null,
+
+                start: function(player_id) {
+                    $('#select_player').hide();
+                    this.player_id = player_id;
+
+                    var source = new EventSource('/events?player=' + player_id);
+                    var self = this;
+
+                    source.addEventListener('draw', function(e) {
+                        self.draw(JSON.parse(e.data));
+                    });
+
+                    source.addEventListener('request-input', function(e) {
+                        self.request_input(JSON.parse(e.data));
+                    });
+
+                    source.addEventListener('message', function(e) {
+                        var data = JSON.parse(e.data);
+                        var s = '';
+                        for (var i=0; i<data.messages.length; i++) {
+                            s += data.messages[i] + '\n';
+                        }
+                        alert(s);
+                    });
+                },
+
+                make_pit: function(index, value, player, is_house) {
+                    var pit = document.createElement('span');
+                    var $pit = $(pit);
+                    var self = this;
+
+                    $pit.addClass('player'+player);
+                    if (is_house) {
+                        $pit.addClass('house');
+                        if (player == 0) {
+                            $pit.css('left', 100 + index * 110);
+                        } else {
+                            $pit.css('left', 100 + (12-index) * 110);
+                        }
+                        $pit.css('top', 310 - player * 220);
+                    } else {
+                        $pit.addClass('store');
+                        $pit.css('left', 700 - player * 650);
+                        $pit.css('top', 200);
+                    }
+
+                    $pit.html('<span>' + value + '</span>');
+                    if (is_house) {
+                        $pit.click(function () {
+                            self.select(index);
+                        });
+                    }
+                    return $pit;
+                },
+
+                draw: function(data) {
+                    $('#board').show();
+                    $('#board').html('');
+
+                    var i, j;
+                    for (j=0; j<data.players.length; j++) {
+                        var player = data.players[j];
+                        for (i=0; i<player.houses.length; i++) {
+                            var house = player.houses[i];
+                            var pit = this.make_pit(house.index, house.seeds, house.player, true);
+                            $('#board').append(pit);
+                        }
+
+                        var store = this.make_pit(-1, player.store, j, false);
+                        $('#board').append(store);
+                    }
+                },
+
+                request_input: function(data) {
+                    if (data.player_id == this.player_id) {
+                        this.input_id = data.input_id;
+                        $('.player'+this.player_id).addClass('active');
+                    }
+                },
+
+                select: function(text) {
+                    if (this.input_id === null) {
+                        alert('It is not your turn.');
+                        return;
+                    }
+                    $.ajax('/input?index=' + text + '&id=' + this.input_id);
+                    $('.player'+this.player_id).removeClass('active');
+                    this.input_id = null;
+                },
+            };
+
+            $(document).ready(function () {
+                $('#board').hide();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="select_player">
+           <h2>Select your player:</h2>
+           <button onclick="Game.start(0);">Player 1</button>
+           <button onclick="Game.start(1);">Player 2</button>
+        </div>
+        <div id="board">
+        </div>
+    </body>
+</html>
