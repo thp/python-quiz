@@ -1,0 +1,26 @@
+http://www.pyug.at/PythonQuiz/2012-09
+
+Zahl in String umwandeln
+
+    Abgabetermin und Präsentationen: http://www.pyug.at/Treffen/2012-09
+
+Ziel ist es eine Funktion bzw. Programm zu schreiben, das eine Zahl in einen
+String umwandelt und dabei Trennzeichen zwischen jedem Block von drei Ziffern
+einfügt.
+
+Beispiele:
+
+    10 => "10"
+    1000 => "1.000"
+    1000000 => "1.000.000"
+    1999995.99 => "1.999.995,99"
+
+Optional soll man die Trennzeichen angeben können, sodass die Zahl auch in
+andere Formate umgewandelt werden kann.
+
+Beispiele:
+
+    1000 => "1.000" oder "1,000"
+    1000000 => "1.000.000" oder "1,000,000"
+    1999995.99 => "1.999.995,99" oder "1,999,995.99"
+
