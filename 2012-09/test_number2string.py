@@ -1,6 +1,6 @@
 
 from number2string import number2string
-from number2string_minimal import f
+from number2string_library import f
 
 from nose.tools import assert_equal
 
