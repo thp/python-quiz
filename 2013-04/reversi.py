@@ -109,11 +109,9 @@ class Reversi:
 
     def find_destinations(self):
         """Find all possible end position for valid moves"""
-        result = set()
         for trace in self.find_traces():
             pos, field = trace[-1]
-            result.add(pos)
-        return result
+            yield pos
 
     def apply_trace(self, trace):
         # Overwrite trace with player's char
@@ -129,7 +127,7 @@ class Reversi:
 
     def solution(self):
         """Returns a string representation of the solution"""
-        destinations = self.find_destinations()
+        destinations = list(self.find_destinations())
 
         def generate():
             for y, row in enumerate(self.board):
@@ -145,7 +143,7 @@ class Reversi:
     def fields(self):
         """Returns a generator with possible solutions as field names"""
         return sorted('ABCDEFGH'[pos.x] + '12345678'[pos.y]
-                for pos in list(self.find_destinations()))
+                for pos in self.find_destinations())
 
     def stats(self):
         def generate():

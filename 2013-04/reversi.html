@@ -128,17 +128,15 @@ Reversi.Game.prototype.find_destinations = function() {
     var traces = this.find_traces();
     for (var i=0; i<traces.length; i++) {
         var trace = traces[i];
-        var pos = trace.pop().pos;
-        if (result.indexOf(pos) === -1) {
-            result.push(pos);
-        }
+        result.push(trace.pop().pos);
     }
     return result;
 };
 
 Reversi.Game.prototype.apply_trace = function(trace) {
     for (var i=0; i<trace.length; i++) {
-        this.board[trace.pos.y][trace.pos.x] = this.player;
+        var element = trace[i];
+        this.board[element.pos.y][element.pos.x] = this.player;
     }
 
     this.player = (this.player === 'W') ? 'B' : 'W';
