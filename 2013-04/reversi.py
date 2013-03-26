@@ -3,10 +3,34 @@
 # Reversi Kata for Python Quiz 2013-04
 # Thomas Perl <m@thp.io>; 2013-03-23
 
+from __future__ import print_function
+
 import collections
 import re
 
-Point = collections.namedtuple('Point', ('x', 'y'))
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def add(self, other):
+        return Point(self.x + other.x, self.y + other.y)
+
+    def inside_board(self):
+        return self.x >= 0 and self.y >= 0 and self.x < SIZE and self.y < SIZE
+
+    def exists_in(self, collection):
+        for other in collection:
+            if self.x == other.x and self.y == other.y:
+                return True
+
+        return False
+
+SIZE = 8
+
+# All possible directions
+STEPS = [-1, 0, +1]
+DIRECTIONS = [Point(x, y) for x in STEPS for y in STEPS if not x == y == 0]
 
 
 def parse_board(board):
@@ -19,10 +43,10 @@ def parse_board(board):
     player = None
 
     for row in filter(None, map(str.strip, board.splitlines())):
-        if len(row) == 8:
+        if len(row) == SIZE:
             assert all(c in ('B', 'W', '.') for c in row), 'Invalid character'
-            rows.append(row)
-            assert len(rows) <= 8, 'More than 8 rows found'
+            rows.append(list(row))
+            assert len(rows) <= SIZE, 'More than 8 rows found'
         elif len(row) == 1:
             assert player is None, 'Player is set multiple times'
             player = row
@@ -31,11 +55,6 @@ def parse_board(board):
             raise ValueError('Invalid input line')
 
     return rows, player
-
-
-# All possible directions
-STEPS = [-1, 0, +1]
-DIRECTIONS = [Point(x, y) for x in STEPS for y in STEPS if not x == y == 0]
 
 class Reversi:
     def __init__(self, board):
@@ -47,23 +66,20 @@ class Reversi:
                 if field == self.player:
                     yield Point(x, y)
 
-    def inside_board(self, pos):
-        return pos.x >= 0 and pos.y >= 0 and pos.x < 8 and pos.y < 8
-
     def make_trace(self, pos, direction):
         """Trace from pos towards direction
 
         Returns a generator containing (pos, field)-tuples starting at
         pos and ending at the first empty field or at the board border
         """
-        while self.inside_board(pos):
+        while pos.inside_board():
             field = self.board[pos.y][pos.x]
             yield pos, field
 
             if field == '.':
                 break
 
-            pos = Point(pos.x + direction.x, pos.y + direction.y)
+            pos = pos.add(direction)
 
     def validate_trace(self, trace):
         """Checks if a trace is a valid move in Reversi
@@ -93,35 +109,32 @@ class Reversi:
 
     def find_destinations(self):
         """Find all possible end position for valid moves"""
+        result = set()
         for trace in self.find_traces():
-            position, field = trace[-1]
-            yield position
+            pos, field = trace[-1]
+            result.add(pos)
+        return result
 
     def apply_trace(self, trace):
-        # Positions to which to write the player's chars
-        positions = [pos for pos, field in trace]
-
-        # New board is the old board, with some fields overwritten
-        self.board = [
-                ''.join(field if (x, y) not in positions else self.player
-                    for x, field in enumerate(row))
-            for y, row in enumerate(self.board)]
+        # Overwrite trace with player's char
+        for pos, field in trace:
+            self.board[pos.y][pos.x] = self.player
 
         # New player is the opponent
         self.player = ('B' if self.player == 'W' else 'W')
 
     def problem(self):
         """Returns a string representation of the problem"""
-        return '\n'.join(self.board + [self.player])
+        return '\n'.join([''.join(x) for x in self.board] + [self.player])
 
     def solution(self):
         """Returns a string representation of the solution"""
-        destinations = set(self.find_destinations())
+        destinations = self.find_destinations()
 
         def generate():
             for y, row in enumerate(self.board):
                 for x, field in enumerate(row):
-                    if (x, y) in destinations:
+                    if Point(x, y).exists_in(destinations):
                         yield '0'
                     else:
                         yield field
@@ -130,9 +143,9 @@ class Reversi:
         return ''.join(generate()).strip()
 
     def fields(self):
-        """Returns a string with possible solutions as field names"""
-        return ('ABCDEFGH'[x] + '12345678'[y]
-                for x, y in sorted(set(self.find_destinations())))
+        """Returns a generator with possible solutions as field names"""
+        return sorted('ABCDEFGH'[pos.x] + '12345678'[pos.y]
+                for pos in list(self.find_destinations()))
 
     def stats(self):
         def generate():
@@ -164,5 +177,7 @@ if __name__ == '__main__':
     print(reversi.solution())
     print()
     print('Fields:', ', '.join(reversi.fields()))
+    print()
+    print('Stats:', reversi.stats())
     print()
 

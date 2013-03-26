@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 # Reversi versus game simulator
 
+from __future__ import print_function
+
 import reversi
 import random
 
