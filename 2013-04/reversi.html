@@ -127,16 +127,14 @@ Reversi.Game.prototype.find_destinations = function() {
     var result = [];
     var traces = this.find_traces();
     for (var i=0; i<traces.length; i++) {
-        var trace = traces[i];
-        result.push(trace.pop().pos);
+        result.push(traces[i].pop().pos);
     }
     return result;
 };
 
 Reversi.Game.prototype.apply_trace = function(trace) {
     for (var i=0; i<trace.length; i++) {
-        var element = trace[i];
-        this.board[element.pos.y][element.pos.x] = this.player;
+        this.board[trace[i].pos.y][trace[i].pos.x] = this.player;
     }
 
     this.player = (this.player === 'W') ? 'B' : 'W';
@@ -157,8 +155,10 @@ Reversi.Game.prototype.solution = function() {
 
     function generate() {
         var result = [];
+        result.push('  ABCDEFGH\n');
         for (var y=0; y<that.board.length; y++) {
             var row = that.board[y];
+            result.push('' + (y+1) + ' ');
             for (var x=0; x<row.length; x++) {
                 var field = row[x];
                 if ((new Reversi.Point(x, y).exists_in(destinations))) {
@@ -172,17 +172,17 @@ Reversi.Game.prototype.solution = function() {
         return result;
     }
 
-    return generate().join('').trim();
+    return generate().join('');
 };
 
 Reversi.Game.prototype.fields = function() {
-    var result = [];
+    var result = {};
     var destinations = this.find_destinations();
+    var traces = this.find_traces();
     for (var i=0; i<destinations.length; i++) {
         var pos = destinations[i];
-        result.push('ABCDEFGH'[pos.x] + '12345678'[pos.y]);
+        result['ABCDEFGH'[pos.x] + '12345678'[pos.y]] = traces[i];
     }
-    result.sort();
     return result;
 };
 
@@ -211,22 +211,43 @@ Reversi.Game.prototype.stats = function() {
 };
 
 var reversi = undefined;
+var fields = {};
 
 function solve() {
-    reversi = new Reversi.Game(document.getElementById('input').value);
+    var input = document.getElementById('input');
+    var output = document.getElementById('output');
+    var target = document.getElementById('target');
+    var apply = document.getElementById('apply');
+
+    reversi = new Reversi.Game(input.value);
     var solution = [
         reversi.solution(),
-        '',
-        'Fields: ' + reversi.fields().join(', '),
-        '',
         'Stats: ' + reversi.stats(),
     ];
-    document.getElementById('output').value = solution.join('\n');
+
+    output.value = solution.join('\n');
+
+    target.removeAttribute('disabled');
+    var options = [];
+    fields = reversi.fields();
+    for (var k in fields) {
+        options.push('<option>' + k + '</option>');
+    }
+    target.innerHTML = options.join('');
+
+    apply.removeAttribute('disabled');
+}
+
+function apply(field) {
+    reversi.apply_trace(fields[field]);
+    document.getElementById('input').value = reversi.problem();
+    solve();
 }
 
 </script>
 <style type="text/css">
-    textarea { width: 300px; height: 200px; font-family: monospace; }
+    h1, h2, h3 { padding: 0px; margin: 0px; }
+    textarea { width: 300px; height: 160px; font-family: monospace; }
     hr { border-width: 0px; border-top: 1px #aaa solid; }
 </style>
 </head>
@@ -251,7 +272,9 @@ for details.
 B
 </textarea>
 <br>
-<button onclick="solve();">Solve</button>
+<button id="solve" onclick="solve();">Solve</button>
+<select id="target" disabled></select>
+<button id="apply" disabled onclick="apply(document.getElementById('target').value);">Apply</button>
 
 <hr>
 <h2>Output</h2>
