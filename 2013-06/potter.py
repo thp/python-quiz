@@ -17,18 +17,19 @@ DISCOUNTS = [0, 5, 10, 20, 25]
 # Discount factors
 DISCOUNT_FACTORS = [1 - (discount / 100) for discount in DISCOUNTS]
 
-def possible_sets(count, max_possible=5):
+def possible_sets(count, max_possible, min_set_number):
     """Generate possible combinations of 5 or less books from a count"""
 
     # Base case: 0 books - we're done
     if count == 0:
-        yield []
+        if min_set_number <= 0:
+            yield []
         return
 
     # Alternate case: Generate all possible sets
     for p in range(max_possible, 0, -1):
         if count >= p:
-            for s in possible_sets(count - p, p):
+            for s in possible_sets(count - p, p, min_set_number - 1):
                 yield [p] + s
 
 def sets_price(sets):
@@ -59,20 +60,49 @@ def can_build_sets(sets, basket):
 
     return True
 
+def count_max_unique(books):
+    max_unique = 0
+    for book in set(books):
+        count = sum(1 for x in books if book == x)
+        if count > max_unique:
+            max_unique = count
+    return max_unique
+
 def potter(books):
-    # Generate all possible sets of books based on the amount of
-    # books, then sort them by their price (lowest first) and check
-    # if we can build the requested set configuration from the books
-    # we have. Return the price for that set.
-    for sets in sorted(possible_sets(len(books)), key=sets_price):
+    # Generate all possible sets of books based on the
+    # amount of books, then sort them by their price
+    # (lowest first) and check if we can build the
+    # requested set configuration from the books we have.
+    # Return the price for that set.
+
+    # The biggest set we can make is the number of distinct books
+    max_set_size = len(list(set(books)))
+
+    # The minimum number of sets is the maximum number of equal books
+    min_set_number = count_max_unique(books)
+    print('min_set_number:', min_set_number)
+
+    for sets in sorted(possible_sets(len(books), max_set_size,
+        min_set_number),
+            key=sets_price):
         if can_build_sets(sets, books):
             return sets_price(sets)
 
-#def debug(count):
-#    for sets in sorted(possible_sets(count), key=sets_price):
-#        print('%8.02f' % sets_price(sets), sets)
+def debug(count):
+    print('Unsorted')
+    for sets in possible_sets(count):
+        print('%8.02f' % sets_price(sets), sets)
+    print('Sorted')
+    for sets in sorted(possible_sets(count), key=sets_price):
+        print('%8.02f' % sets_price(sets), sets)
 #debug(8)
 
-basket = [0, 0, 1, 1, 2, 2, 3, 4]
+#basket = [0, 0, 1, 1, 2, 2, 3, 4]
+#print('%.2f' % potter(basket))
+
+#basket = [0, 0, 1, 2, 2, 3]
+#print('%.2f' % potter(basket))
+
+basket = [0] * 100 + [1] * 100 + [2] * 100
 print('%.2f' % potter(basket))
 
