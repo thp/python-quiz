@@ -9,3 +9,14 @@ the largest formed number is 95021.
     http://pyug.at/PythonDojo/Ziffernkette
     https://blog.svpino.com/2015/05/08/solution-to-problem-4
     http://30hopsmax.at/pipermail/pyugat-discuss/2015-June/000292.html
+
+
+Test results on OS X 10.10.3, Python 3.4.3 on an 3,1 GHz Intel Core i7:
+
+    <function ziffernkette_pyugat_str at 0x108395840> duration: 6.40347695350647
+    <function ziffernkette_pyugat_str_fast at 0x1083958c8> duration: 5.111714124679565
+    <function ziffernkette_pyugat_str_slow at 0x108395950> duration: 5.900825023651123
+    <function ziffernkette_pyugat_int at 0x1083959d8> duration: 9.102903842926025
+    <function ziffernkette_pyugat_int_fast at 0x108395a60> duration: 9.527769088745117
+    <function run at 0x108395730> duration: 10.829554796218872
+    <function bruteforce_best_number at 0x1083957b8> duration: 38.73434495925903
