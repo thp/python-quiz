@@ -1,0 +1,11 @@
+ZIFFERNKETTE
+============
+
+Write a function that given a list of non negative integers, arranges them such
+that they form the largest possible number. For example, given [50, 2, 1, 9],
+the largest formed number is 95021.
+
+    http://pyug.at/Treffen/2015-06
+    http://pyug.at/PythonDojo/Ziffernkette
+    https://blog.svpino.com/2015/05/08/solution-to-problem-4
+    http://30hopsmax.at/pipermail/pyugat-discuss/2015-June/000292.html
